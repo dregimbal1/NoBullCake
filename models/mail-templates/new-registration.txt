@@ -1,0 +1,6 @@
+Hello #USERNAME#
+
+We would like to extend a warm welcome on behalf of the staff at #WEBSITENAME#
+#ACTIVATION-MESSAGE
+
+- Best Regards

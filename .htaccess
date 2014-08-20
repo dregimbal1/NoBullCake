@@ -1,0 +1,10 @@
+RewriteEngine On
+Options -MultiViews
+Options +FollowSymLinks
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|assets|editor|css|js|scripts|images|img|media|xml|user_guide|robots\.txt|favicon\.ico)
+RewriteRule ^profile/([^/]*)$ /?profile=$1 [L]
+RewriteRule ^manager/([^/]*)$ /?manager=$1 [L]
+RewriteRule ^([^/\.]+)/?$ index.php?page=$1 [L]
